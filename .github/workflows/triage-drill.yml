@@ -1,0 +1,16 @@
+name: Triage Drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-check:
+    name: deploy-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Announce pipeline start
+        run: echo "TRIAGE-DRILL pipeline started"
+      - name: Run deploy check
+        run: |
+          echo "DEPLOY-CHECK-FAILED: simulated rollback triggered"
+          exit 1
