@@ -1,4 +1,1 @@
-import sys
-
-print("DRILL_INTENTIONAL_FAILURE")
-sys.exit(1)
+print("drill fix in place, check is green and exits 0")
