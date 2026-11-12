@@ -1,0 +1,13 @@
+name: Drill Check
+
+on:
+  pull_request:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate flaky network error
+        run: |
+          echo "simulated flaky network error (drill)"
+          exit 1
