@@ -1,13 +1,1 @@
-name: CI Triage Drill
-
-on:
-  workflow_dispatch:
-
-jobs:
-  drill:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print drill marker
-        run: |
-          echo "DRILL-FAIL"
-          exit 1
+<name: CI Triage Drill\n\non:\n  workflow_dispatch:\n\njobs:\n  drill:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Print DRILL-FAIL marker and fail the job\n        run: |\n          echo \"DRILL-FAIL\"\n          exit 1\n```
